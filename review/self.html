@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="javescript" href="./index.js" />
+    <script
+      src="https://kit.fontawesome.com/bf6cacef16.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Whisky Tour</title>
+    <div id="heading">
+      <div class="loAndTit">
+        <img src="../LOGO.png" alt="Logo" />
+        <h1>
+          <a href="../index.html">Scotch Whisky</a>
+        </h1>
+      </div>
+      <a href="../index.html" class="fa">
+        <div>
+          <i class="fa-solid fa-house-user"></i>
+        </div>
+      </a>
+    </div>
+    <div id="banner">
+      <img src="../banner.jpg" />
+    </div>
+  </head>
+  <body>
+    <h2>Visitor Information</h2>
+
+    <p>Please Leave Us your Feedback</p>
+    <div id="reviewContainer"><hr /></div>
+
+    <form id="reviewForm" name="feedback" action="/feedback" method="post">
+      <label for="name">Visitor</label>
+      <input
+        id="name"
+        required
+        name="username"
+        autocomplete="name"
+        type="text"
+        autofocus
+        tabindex="0"
+      />
+
+      <label for="time">Time:</label>
+      <input
+        type="datetime-local"
+        id="time"
+        required
+        name="time"
+        autocomplete="time"
+      />
+
+      <label>Email</label>
+      <input
+        id="feedback-email"
+        name="email"
+        autocomplete="email"
+        type="email"
+        autofocus
+        tabindex="2"
+      />
+
+      <label for="rating">Rating:</label>
+      <input type="number" id="rating" min="1" max="5" required />
+
+      <textarea id="text" name="message" rows="10" tabindex="5"></textarea>
+
+      <div class="button">
+        <input type="submit" name="submit" value="Submit" tabindex="7" />
+        <input type="reset" name="reset" value="Reset" tabindex="8" />
+      </div>
+    </form>
+    <script src="data.js"></script>
+    <script src="reviewApp.js"></script>
+  </body>
+</html>

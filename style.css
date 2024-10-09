@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+body {
+  max-width: 100%;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  justify-items: center;
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    font-size: 18px;
+  }
+  .bodyContainer {
+    display: center;
+    vertical-align: middle;
+  }
+
+  .distillery-card {
+    display: center;
+    flex-direction: column;
+
+    width: auto;
+
+    margin: 30px;
+    background-color: lightgray;
+    border: 30px;
+    border-radius: 5dvb;
+  }
+
+  .distillery-card h3 {
+    margin-left: 10px;
+    margin-right: 3px;
+    font-size: 15pt;
+  }
+  /* Additional styles for larger screens */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-container {
+    display: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .distillery-content {
+    display: center;
+    flex-direction: column;
+    justify-self: center;
+    grid-gap: 10px;
+    width: auto;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 401px) {
+  main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .region-buttons {
+    width: 150px; /* Adjust as needed */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .region-buttons button {
+    margin: auto;
+    padding: black;
+    background-color: #f0f0f0;
+    border: none;
+    font-size: 15pt;
+    cursor: pointer;
+    width: 150px;
+  }
+
+  .region-details {
+    justify-items: center;
+    align-items: center;
+    margin-inline-start: auto;
+    vertical-align: auto; /* Prevent content from wrapping to the next line */
+  }
+
+  .button {
+    grid-column: 2/3;
+    text-align: right;
+  }
+
+  .subhd {
+    background-color: cadetblue;
+    height: 40px;
+    text-align: center;
+  }
+  .subhd h2 {
+    color: antiquewhite;
+  }
+  #heading {
+    display: flex;
+    width: auto;
+  }
+
+  #heading .about {
+    align-self: center;
+    margin: 10px;
+  }
+
+  #heading #icon {
+    margin-left: auto;
+  }
+  #heading .trip {
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+  }
+
+  #heading .fa-3x {
+    vertical-align: middle;
+    margin: 10px;
+  }
+
+  #heading img {
+    width: 100px; /* Adjust the width as needed */
+    height: 80px; /* Maintain aspect ratio */
+    align-items: center;
+    margin-right: 30px;
+  }
+
+  .location {
+    width: auto;
+    height: auto;
+    margin-left: 30px;
+  }
+
+  #heading h1 {
+    display: flex;
+    align-self: center;
+  }
+
+  .bodyContainer {
+    display: flex;
+  }
+  .fix {
+    display: flex;
+  }
+
+  #d01 image {
+    width: 100px;
+    height: auto;
+  }
+  .region-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .region-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .region-name {
+    width: auto;
+  }
+
+  .distillery-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+
+    margin: 30px;
+    background-color: lightgray;
+    border: 30px;
+    border-radius: 5dvb;
+  }
+  .distillery-card img {
+    width: auto;
+    height: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .distillery-content {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+
+    width: 900%;
+    height: auto;
+  }
+
+  .loAndTit {
+    display: flex;
+    width: 400px;
+  }
+
+  .distillery-card p {
+    width: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14pt;
+  }
+  .region-name {
+    justify-content: center;
+    font-size: 18pt;
+  }
+
+  .distillery-card h3 {
+    margin-left: 10px;
+    margin-right: 3px;
+    font-size: 20pt;
+  }
+  #banner {
+    background-image: initial;
+    height: 150;
+  }
+
+  #banner img {
+    width: 100%;
+  }
+}

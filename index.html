@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script
+      src="https://kit.fontawesome.com/bf6cacef16.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Whisky Tour</title>
+  </head>
+
+  <body>
+    <div id="heading">
+      <div class="loAndTit">
+        <img src="./LOGO.png" alt="Logo" />
+        <h1>
+          <a href="./index.html">Scotch Whisky</a>
+        </h1>
+      </div>
+      <div id="icon">
+        <a href="./trip/trip.html" class="trip">
+          <i class="fa-solid fa-suitcase-rolling fa-fade fa-2xl"></i>
+        </a>
+        <a href="./review/self.html" class="fa-3x">
+          <i class="fa-regular fa-comment fa-fade fa-sm"></i>
+        </a>
+        <a href="./about/about.html" class="about">
+          <i class="fa-regular fa-address-card fa-fade fa-2xl"></i>
+        </a>
+      </div>
+    </div>
+    <div id="banner">
+      <img src="./banner.jpg" />
+    </div>
+    <hr />
+    <div class="subhd">
+      <h2>Scotch Whisky Regions</h2>
+    </div>
+
+    <div class="fix">
+      <div class="region-buttons" id="regionButtons">
+        <!-- Region buttons will be dynamically inserted here -->
+      </div>
+      <div class="location">
+        <p>
+          Scotch Whisky is produced all over Scotland and can be broken down
+          into six regions, Highlands, Speyside, Lowlands, Campbeltown, Islay
+          and Islands.
+          <br />
+          <br />
+          Scotch is like Wine in that the location of where it's produced makes
+          a big difference to how it tastes, looks and smells even though it's
+          produced in the same country. Scotland isn't the biggest country, but
+          the differences in location to Whisky taste are phenomenal. Coastal
+          distilleries will produce a whisky that tastes nothing like an inland
+          whisky. A single malt from one of the island's distilleries will
+          differ from the heavily condensed area of Speyside. Even within
+          regions, a whisky can have completely different notes and aromas.
+          <br />
+          <br />
+          Scottish whisky is world-renowned, so it's important to distinguish
+          the difference; every region has a whisky powerhouse found in most
+          bars around the World. Below we've listed details about each Scottish
+          Whisky region, covering some famous names, notably aromas and flavours
+          and how to differentiate from region to region.
+        </p>
+      </div>
+    </div>
+    <main>
+      <div class="main-container">
+        <div class="content">
+          <div class="region-details" id="regionDetails"></div>
+          <div class="region">
+            <div class="region-info">
+              <h2 class="region-name">Scotch Whiskey 6 Regions</h2>
+              <ul class="social-links">
+                <!-- Social media links will be dynamically inserted here -->
+              </ul>
+            </div>
+            <hr />
+            <img
+              src=./scottishWhiskyRegion.jpeg
+              width="450"
+              height="560"
+            />
+
+            <div class="region-cards">
+              <!-- Distillery cards will be dynamically inserted here -->
+            </div>
+            <div>
+              <hr
+                style="
+                  height: 2px;
+                  border-width: 0;
+                  color: gray;
+                  background-color: gray;
+                "
+              />
+            </div>
+          </div>
+          <div class="distillery-title"></div>
+          <div class="distillery-content"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./region.js"></script>
+    <script src="./distillery.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
